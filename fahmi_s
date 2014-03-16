@@ -1,0 +1,11 @@
+ls = 2
+commit = 2
+mkdir = 2
+cd = 25
+mv = 6
+clone = 20
+emacs = 2
+rm = 8
+clean = 1
+svn = 75
+
