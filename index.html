@@ -21,109 +21,41 @@
 
 Unlocked Achievements      30/      30  for 850 points<br>
 <ul>
-<li><div class="title">Geek Apprenti </div>  <div class="info">Faire 10 ls sur son terminal .</div></li>
-<li><div class="title">Geek intermédiaire </div>  <div class="info">Faire 25 ls sur son terminal .</div></li>
-<li><div class="title">Geek Confirmé </div>  <div class="info">Faire 50 ls sur son terminal .</div></li>
+<li><div class="title" id="ls">Ls</div>  <div class="info">Faire 10 ls sur son terminal .</div></li>
+
+
 <li><div class="title">Envoyeur Apprenti </div>  <div class="info">Faire 10 commit sur son terminal.</div></li>
-<li><div class="title">Envoyeur intermédiaire</div>  <div class="info">Faire 25 commit sur son terminal.</div></li>
-<li><div class="title">Envoyeur Confirmé</div>  <div class="info">Faire 50 commit sur son terminal.</div></li>
+
+
 <li><div class="title">Créateur Apprenti</div>  <div class="info">Créer 10 dossier avec mkdir sur son terminal.</div></li>
-<li><div class="title">Créateur intermédiaire</div>  <div class="info">Créer 25 dossier avec mkdir sur son terminal.</div></li>
-<li><div class="title">Créateur Confirmé</div>  <div class="info">Créer 50 dossier avec mkdir sur son terminal.</div></li>
+
+
 <li><div class="title">Pénétreur Apprenti</div>  <div class="info">Faire 10 cd sur son terminal.</div></li>
-<li><div class="title">Pénétreur intemédiaire</div>  <div class="info">Faire 25 cd sur son terminal.</div></li>
-<li><div class="title">Pénétreur Confimé</div>  <div class="info">Faire 50 cd sur son terminal.</div></li>
+
+
 <li><div class="title">Changeur Apprenti</div>  <div class="info">Faire 10 mv sur son terminal. </div></li>
-<li><div class="title">Changeur intermédiaire</div>  <div class="info">Faire 25 mv sur son terminal. </div></li>
-<li><div class="title">Changeur Confirmé</div>  <div class="info">Faire 50 mv sur son terminal. </div></li>
+
+
 <li><div class="title">Cloneur Apprenti </div>  <div class="info">Faire 10 clone sur son terminal.</div></li>
-<li><div class="title">Cloneur intermédiaire</div>  <div class="info">Faire 25 clone sur son terminal.</div></li>
-<li><div class="title">Cloneur Confirmé</div>  <div class="info">Faire 50 clone sur son terminal.</div></li>
+
+
 <li><div class="title">Créateur Apprenti</div>  <div class="info">Faire 10 emacs sur son terminal.</div></li>
-<li><div class="title">Créateur intermédiaire</div>  <div class="info">Faire 25 emacs sur son terminal.</div></li>
-<li><div class="title">Créateur Confirmé</div>  <div class="info">Faire 50 emacs sur son terminal.</div></li>
+
+
 <li><div class="title">Gommeur Apprenti </div>  <div class="info">Supprimer 10 fichiers avec rm.</div></li>
-<li><div class="title">Gommeur intermédiaire</div>  <div class="info">Supprimer 25 fichiers avec rm.</div></li>
-<li><div class="title">Gommeur Confirmé</div>  <div class="info">Supprimer 50 fichiers avec rm.</div></li>
+
+
 <li><div class="title">Nettoyeur Apprenti</div>  <div class="info">Nettoyer 10 fois le terminal avec clean.</div></li>
-<li><div class="title">Nettoyeur intermédiaire</div>  <div class="info">Nettoyer 25 fois le terminal avec clean.</div></li>
-<li><div class="title">Nettoyeur Confirmé</div>  <div class="info">Nettoyer 50 fois le terminal avec clean.</div></li>
+
+
 <li><div class="title">Travailleur Apprenti</div>  <div class="info">Faire 10 svn sur son terminal.</div></li>
-<li><div class="title">Travailleur intermédiaire</div>  <div class="info">Faire 25 svn sur son terminal.</div></li>
-<li><div class="title">Travailleur Confirmé</div>  <div class="info">Faire 50 svn sur son terminal.</div></li>
+
+
 
 </ul>
-Git commands sorted by usage:
+
 <pre style="text-align: left">
-2102 status
-1416 add
-1268 diff
- 955 show
- 709 commit
- 662 log
- 478 rebase
- 301 push
- 282 checkout
- 214 cherry-pick
- 202 branch
- 169 fetch
- 115 hooks
-  80 reset
-  76 rev-list
-  74 remote
-  49 blame
-  39 rm
-  37 clone
-  35 init
-  29 achievements
-  27 gc
-  26 config
-  19 format-patch
-  18 tag
-  18 send-email
-  18 bisect
-  17 rev-parse
-  15 am
-  14 stash
-  13 symbolic-ref
-  10 timecard
-  10 prune
-   9 reflog
-   9 pull
-   9 ls-tree
-   9 filter-branch
-   8 --version
-   7 diff-index
-   7 clean
-   6 revert
-   6 merge
-   6 ls-files
-   5 cat-file
-   5 archive
-   4 update-ref
-   4 mv
-   4 hash-object
-   4 grep
-   4 describe
-   3 update-server-info
-   3 cvsimport
-   3 --help
-   2 unpack-objects
-   2 svn
-   2 submodule
-   2 show-branch
-   2 read-tree
-   1 write-tree
-   1 shortlog
-   1 repack
-   1 merge-base
-   1 mailsplit
-   1 mailinfo
-   1 ll
-   1 help
-   1 count
-   1 bundle
-   1 apply
+
 </pre>
 <script type="text/javascript">
 function showLocked() {
@@ -131,7 +63,7 @@ function showLocked() {
     document.getElementById('showlocked').style.visibility = 'hidden';
 }
 </script>
-<a id="showlocked" href="javascript:showLocked()" >Show locked Achievements</a>
+<a id="showlocked" href="javascript:showLocked()" ></a>
 <div id="locked">
 
 <ul>
