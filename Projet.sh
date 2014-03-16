@@ -64,45 +64,45 @@ declare c_svn=`grep -w "svn" "$user_name"".log" | cut -d " " -f3`
 
  if [ $c_commit -ge "10" ] 
  then
- sed -i "" s/\"commit\"\ \class=\"red\"/\"commit\"\ \class=\"completed\"/g "$folder_name"/index.html
+ sed -i "" s/Commit/Commit\ \Completed/g "$folder_name"/index.html
  fi
 
  if [[ $c_mkdir -ge "10" ]]
  then
- sed -i "" s/\"mkdir\"\ \class=\"red\"/\"mkdir\"\ \class=\"completed\"/g "$folder_name"/index.html
+ sed -i "" s/Mkdir/Mkdir\ \Completed/g "$folder_name"/index.html
  fi
 
  if [[ $c_cd -ge "10" ]]
  then
- sed -i "" s/\"cd\"\ \class=\"red\"/\"cd\"\ \class=\"completed\"/g "$folder_name"/index.html
+ sed -i "" s/Cd/Cd\ \Completed/g "$folder_name"/index.html
  fi
 
  if [[ $c_mv -ge "10" ]]
  then
- sed -i "" s/\"mv\"\ \class=\"red\"/\"mv\"\ \class=\"completed\"/g "$folder_name"/index.html
+ sed -i "" s/Mv/Mv\ \Completed/g "$folder_name"/index.html
  fi
 
  if [[ $c_clone -ge "10" ]]
  then
- sed -i "" s/\"clone\"\ \class=\"red\"/\"clone\"\ \class=\"completed\"/g "$folder_name"/index.html
+ sed -i "" s/Clone/Clone\ \Completed/g "$folder_name"/index.html
  fi
 
  if [[ $c_emacs -ge "10" ]]
  then
- sed -i "" s/\"emacs\"\ \class=\"red\"/\"emacs\"\ \class=\"completed\"/g "$folder_name"/index.html
+ sed -i "" s/Emacs/Emacs\ \Completed/g "$folder_name"/index.html
  fi
 
  if [[ $c_rm -ge "10" ]]
  then
- sed -i "" s/\"rm\"\ \class=\"red\"/\"rm\"\ \class=\"completed\"/g "$folder_name"/index.html
+ sed -i "" s/Rm/Rm\ \Completed/g "$folder_name"/index.html
  fi
 
  if [[ $c_clean -ge "10" ]]
  then
- sed -i "" s/\"clean\"\ \class=\"red\"/\"clean\"\ \class=\"completed\"/g "$folder_name"/index.html
+ sed -i "" s/Clean/Clean\ \Completed/g "$folder_name"/index.html
  fi
 
- if [[ $c_svn -le "10" ]]
+ if [[ $c_svn -ge "10" ]]
  then
-     sed -i "" s/\"svn\"\ \class=\"red\"/\"svn\"\ \class=\"completed\"/g "$folder_name"/index.html
+sed -i "" s/Svn/Svn\ \Completed/g "$folder_name"/index.html
  fi
